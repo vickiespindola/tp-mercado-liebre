@@ -1,0 +1,39 @@
+footer {
+    margin-top: 45px;
+    padding: 20px 0;
+    background-color: white;
+    border: none;
+    text-align: center;
+    color: var(--gris-oscuro);
+}
+
+footer section{
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+ footer section i{
+    background-color:white;
+    color: var(--color-celeste);
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+footer h3{
+    font-size: var(--descripciones);
+    font-family: var(--tipografia);
+    margin: 0;
+}
+
+footer section p{
+    margin: 0 60px;
+    text-align: center;
+    font-size: var(--cuerpo);
+}
+
+footer section .derechos{
+    margin-left: -40px;
+    margin-top: 60px;
+    padding-bottom: 10px;
+}

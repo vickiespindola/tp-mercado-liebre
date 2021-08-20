@@ -1,0 +1,37 @@
+main img{
+    width: 100%;
+}
+
+main section article{
+    padding: 0;
+    margin: 20px 40px;
+    text-align: center;
+    background-color: white;
+}
+
+main section h3{
+    font-size: var(--titulares);
+    margin: 10px;
+}
+
+main section article img{
+    width: 80%;
+    align-items: center;
+}
+
+main section article p{
+    font-size: var(--precios);
+}
+
+main section article span{
+    font-size: var(--descuentos);
+}
+
+.descuento{
+    color: var(--color-verde);
+}
+
+main section article h4{
+    font-size: var(--descripciones);
+}
+
