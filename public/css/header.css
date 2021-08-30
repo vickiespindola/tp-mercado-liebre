@@ -2,31 +2,41 @@ header{
     background-color:var(--color-amarillo);
     font-family: var(--tipografia);
     font-size: var(--cuerpo);
+    padding: 10px;
 }
 
 header .logo{
     width: 40%;
-    margin: 35px 35px 20px;
+  
 }
 
-header .barra{
+header form{
+    width: 50%;
+}
+
+header form input{
+    width: 85%;
+}
+
+/* header .barra{
     background-color: white;
     color: var(--color-gris-oscuro);
     border-radius: 3px;
     width: 50vw;
     margin-left: 30px;
-    padding: 1px;
+ 
 }
-
-header button{
-    margin-left: 30px ;
-    margin-top:3px;
-   
-}
+ */
 
 header p{
     text-align: center;
-    margin: 20px 0;
+    margin: 10px 0;
+    font-family: var(--tipografia);
+    font-size: var(--cuerpo);
+}
+
+header nav{
+    display: none;
 }
 
 header nav ul{
@@ -42,20 +52,34 @@ header nav ul li a{
     color:black;
 }
 
-header .burger-menu{
-    background-color: var(--color-celeste);
-    display: inline-block;
-    border-radius: 7px;
-    margin: 25px 45vw;
+header #burger-menu{
+     text-align: center;
+     padding: 10px 0;
+}
+ header #burger-menu i{
+     background-color: var(--color-celeste);
+     color: white;
+     border-radius: 6px; 
+     padding: 10px;
+     font-size: var(--descripciones);
     }
-    
+
+
 header i.fas.fa-bars{
         color: white;
         font-size: 18px;
         padding: 10px;
     }
 
- 
+@media(min-width: 361px){
+    header nav{
+        display: block;
+    }
+    header #burger-menu{
+        display: none;
+}
+
+} 
 
  
 
