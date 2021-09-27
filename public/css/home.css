@@ -78,7 +78,7 @@
     padding-top: 20px;
 }
 
-@media(min-width: 361px){
+@media(min-width: 425px){
 .home main .banner{
         display: block;
     }
