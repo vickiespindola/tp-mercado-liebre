@@ -1,85 +1,258 @@
-header{
+.home header{
     background-color:var(--color-amarillo);
     font-family: var(--tipografia);
     font-size: var(--cuerpo);
     padding: 10px;
+    width: 100%;
 }
 
-header .logo{
-    width: 40%;
-  
-}
+.home header div.first-container{
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   padding: 15px;
+}   
 
-header form{
+.home header div.container-img{
     width: 50%;
+    padding-right: 5px;
 }
 
-header form input{
-    width: 85%;
+.home header div form{
+    width: 50%;
+    padding-left: 5px;
+    /* position: relative; */
 }
 
-/* header .barra{
-    background-color: white;
-    color: var(--color-gris-oscuro);
-    border-radius: 3px;
-    width: 50vw;
-    margin-left: 30px;
- 
+.home header form input{
+    width: 81%;
+    margin-top: 5px;
+    padding: 9px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: var(--color-gris-oscuro);
+    font-size: 10px;
 }
- */
 
-header p{
+.home header form button{
+    position: absolute;
+    padding: 7px;
+    padding-bottom: 6px;
+    width: 25px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: var(--color-gris-oscuro);
+    background-color: white; 
+    margin-top: 5px;  
+}
+
+.home header form button i{
+    font-size: 10px;
+}
+.home header div.compra-en-cuotas{
+    display: flex;
+    align-content: center;
+}
+
+.home header p{
     text-align: center;
-    margin: 10px 0;
+    margin: 10px 40px;
     font-family: var(--tipografia);
     font-size: var(--cuerpo);
+    flex-direction: column;
 }
 
-header nav{
-    display: none;
+.home header nav{
+    display: flex;
+    display: none
 }
 
-header nav ul{
+.home header nav ul{
     margin: 10px 0;
 }
 
-header nav ul li{
+.home header nav ul li{
      list-style: none;
-}
+}   
 
-header nav ul li a{
+.home header nav ul li a{
     text-decoration: none;
     color:black;
+    font-size: 14px;
 }
 
-header #burger-menu{
-     text-align: center;
-     padding: 10px 0;
+
+.home header div#burger-menu{
+    text-align: center;
+    padding: 10px 0;
 }
- header #burger-menu i{
+
+.home header #burger-menu i{
      background-color: var(--color-celeste);
      color: white;
      border-radius: 6px; 
      padding: 10px;
      font-size: var(--descripciones);
-    }
+}
 
 
-header i.fas.fa-bars{
+.home header i.fas.fa-bars{
         color: white;
         font-size: 18px;
         padding: 10px;
-    }
-
-@media(min-width: 361px){
-    header nav{
-        display: block;
-    }
-    header #burger-menu{
-        display: none;
 }
 
-} 
+@media(min-width: 361px){
+.home header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.home header div.first-container{
+    width: 60%;
+    padding: 2px;
+}  
+     
+.home header div.container-img{
+    width: 50%;
+    padding-right: 5px;
+    margin-top: 5px;
+    align-self: center;
+}
+     
+.home header div form{
+    width: 50%;
+    padding: 0;
+    margin-top: 5px;
+    text-align: left;
+    align-self: center;
+
+}
+     
+.home header form input{
+    margin-right: 2px;
+/* text-align: left; */
+    padding: 4px;
+    border-radius: 2px;
+    font-size: 14px;
+    width: 85%;
+}
+     
+.home header form button{
+    padding: 4px;
+    width: 18px;
+    border-radius: 2px;
+    border: var(--color-gris-oscuro);
+    background-color: white; 
+  
+}
+     
+.home header form button i{
+         font-size: 12px;
+     }
+.home header div.compra-en-cuotas{
+         display: flex;
+         align-content: center;
+}
+     
+.home header p{
+         width: 40%;
+         text-align: center;
+         margin: 10px 0 0 0;
+         font-family: var(--tipografia);
+         font-size: 12px;
+         flex-direction: column;
+         align-self: center;
+}
+
+.home header nav{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+     height: 50%;
+    
+}        
+
+.home header nav ul{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.home header nav ul.right{
+    display: flex;
+    width: 40%;
+    align-items: center;
+    margin: 10px 0 5px 0;
+ }
+
+
+.home header nav ul li.ofertas, 
+.home header nav ul li.vender, 
+.home header nav ul li.ayuda{
+    width: 55%;
+ }
+
+ .home header nav ul li.oficiales{
+     width: 100%;
+ }
+
+.home header nav ul.left{
+    display: flex;
+    width: 55%;
+    align-items: center;
+    margin: 10px 0 5px 0;
+    align-self: center;
+ 
+ }
+
+.home header nav ul li{
+        display: flex;
+        padding: 5px;
+        font-size: 13px;
+        width: 100%;
+}
+.home header nav ul li.crea{
+  padding: 0;
+  width: 110%;
+}
+.home header nav ul li.ingresa{
+    padding: 0;
+}
+
+.home header nav ul li.ingresa a{
+   width: 85%;
+   text-align: center;
+}
+
+.home header nav ul li.compras{
+    width: 110%
+}
+.home header div#burger-menu{
+    display: none;
+}
+
+@media (min-width: 768px) {
+.home header div form{
+        text-align: center;
+}
+
+.home header p {
+    font-size: 15px;
+}
+
+
+.home header nav ul.left{
+    width: 40%;
+}
+
+}
+}
+
 
  
 
